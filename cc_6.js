@@ -4,7 +4,7 @@ class Employee {
         this.name = name;
         this.department = department;
     }
-
+    // Add a method called describe() that returns a string describing the employee’s name and department.
     describe() {
         return `${this.name} works in the ${this.department} department.`;
     }
@@ -16,7 +16,7 @@ class Manager extends Employee {
         super(name, department);
         this.teamSize = teamSize;
     }
-
+    // Create a describe() method that overrides the parent method and adds manager-specific information about the team size.
     describe() {
         return `${this.name} manages the ${this.department} department and leads a team of ${this.teamSize} employees.`;
     }
